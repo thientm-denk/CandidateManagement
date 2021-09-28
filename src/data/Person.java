@@ -35,20 +35,12 @@ public class Person {
     }
 
     public void updateAll() {
-        updateCandi();
         updatePhone();
         updateEmail();
         updateFirstName();
         updateLastName();
         updateBrirthDay();
         updateAddress();
-    }
-
-    public void updateCandi() {
-        String tmp;
-        if (!(tmp = library.Denk.inputString("Nhập ID: ")).isEmpty()) {
-            this.Candi = tmp;
-        }
     }
 
     public void updatePhone() {

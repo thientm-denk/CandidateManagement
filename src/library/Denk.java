@@ -51,6 +51,7 @@ public class Denk {
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
+    
     public static String inputString(String welcome) {
         System.out.printf(welcome);
         Scanner sc = new Scanner(System.in);

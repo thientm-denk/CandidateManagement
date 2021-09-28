@@ -28,26 +28,26 @@ public class Intern extends Person {
     @Override
     public void updateAll() {
         super.updateAll();
-        udateCandi();
-        updatePhone();
-        updateEmail();
+        udateMajors();
+        updateUniversityName();
+        updateSemester();
     }
 
-    public void udateCandi() {
+    public void udateMajors() {
         String tmp;
         if (!(tmp = library.Denk.inputString("Nhập chuyên ngành: ")).isEmpty()) {
             this.majors = tmp;
         }
     }
 
-    public void updatePhone() {
+    public void updateUniversityName() {
         String tmp;
         if (!(tmp = library.Denk.inputString("Nhập Tên trường đại học: ")).isEmpty()) {
             this.universityName = tmp;
         }
     }
 
-    public void updateEmail() {
+    public void updateSemester() {
         String tmp;
         if (!(tmp = library.Denk.inputString("Nhập học kỳ:")).isEmpty()) {
             this.semester = tmp;
